@@ -1,12 +1,12 @@
-# BookStore Manager CLI
+-  BookStore Manager CLI
 
 Aplicação de linha de comando (CLI) para gerenciamento de uma livraria, desenvolvida como Projeto Final Avaliativo do Módulo 01. Permite administrar autores, livros, clientes e empréstimos, utilizando Node.js, TypeScript e PostgreSQL.
 
-## Objetivo
+-  Objetivos do projeto:
 
 Consolidar os conhecimentos de back-end desenvolvidos ao longo do módulo: JavaScript moderno, TypeScript, Programação Orientada a Objetos, programação assíncrona, arquitetura em camadas, modelagem de banco de dados relacional e boas práticas de desenvolvimento (Clean Code / SOLID).
 
-## Tecnologias utilizadas
+- Tecnologias que foram utilizadas ao decorrer do projeto:
 
 - Node.js
 - TypeScript
@@ -15,13 +15,13 @@ Consolidar os conhecimentos de back-end desenvolvidos ao longo do módulo: JavaS
 - `dotenv` (variáveis de ambiente)
 - `ts-node-dev` (execução em modo desenvolvimento)
 
-## Requisitos para execução
+- Requisitos para execução da aplicacao:
 
 - Node.js 18+ instalado
 - PostgreSQL instalado e em execução
 - npm
 
-## Configuração do banco de dados
+- Configuração do banco de dados
 
 1. Crie o banco de dados no PostgreSQL:
 
@@ -37,7 +37,7 @@ Consolidar os conhecimentos de back-end desenvolvidos ao longo do módulo: JavaS
 
    Esse script cria as tabelas `autores`, `livros`, `clientes` e `emprestimos`, com seus relacionamentos (chaves primárias e estrangeiras), além de inserir alguns dados de exemplo.
 
-## Instalação
+- Instalação
 
 1. Clone o repositório:
 
@@ -68,7 +68,7 @@ Consolidar os conhecimentos de back-end desenvolvidos ao longo do módulo: JavaS
    DB_NAME=bookstore_manager
    ```
 
-## Execução
+- Execução
 
 Modo desenvolvimento (recomendado, com recarregamento automático):
 
@@ -83,20 +83,20 @@ npm run build
 npm start
 ```
 
-## Arquitetura do projeto
+- Arquitetura do projeto
 
 A aplicação segue uma arquitetura organizada em camadas, separando responsabilidades:
 
 ```
 src/
-├── main.ts                # Ponto de entrada da aplicação
-├── controllers/           # Interação com o usuário via terminal
-├── services/               # Regras de negócio
-├── repositories/           # Comunicação exclusiva com o PostgreSQL
-├── models/                 # Classes e interfaces das entidades
-├── database/                # Conexão com o banco e script SQL
-├── utils/                   # Funções auxiliares (validações, inputs, erros)
-└── menus/                    # Organização e navegação dos menus da CLI
+├── main.ts             P# Ponto de entrada da aplicação
+├── controllers/        I# Interação com o usuário via terminal
+├── services/           R# Regras de negócio
+├── repositories/       C # Comunicação exclusiva com o PostgreSQL
+├── models/             C # Classes e interfaces das entidades
+├── database/             C# Conexão com o banco e script SQL
+├── utils/               F# Funções auxiliares (validações, inputs, erros)
+└── menus/                 O# Organização e navegação dos menus da CLI
 ```
 
 Fluxo de uma funcionalidade:
@@ -110,7 +110,7 @@ Usuário -> Menu -> Controller -> Service -> Repository -> PostgreSQL
 - Repositories: executam os comandos SQL (INSERT, UPDATE, DELETE, SELECT) via biblioteca `pg`.
 - Models: representam Autor, Livro, Cliente e Empréstimo como classes/interfaces tipadas.
 
-## Funcionalidades implementadas
+- Funcionalidades implementadas
 
 - Gerenciamento de autores: cadastrar, listar, consultar por id, atualizar, remover.
 - Gerenciamento de livros: cadastrar (vinculado a um autor), listar, consultar por id, atualizar, remover.
@@ -128,7 +128,7 @@ Usuário -> Menu -> Controller -> Service -> Repository -> PostgreSQL
 - Tratamento de erros de negócio (livro/autor/cliente inexistente, livro sem disponibilidade, e-mail duplicado, etc.) sem interromper a execução da aplicação.
 - Uso de async/await e try/catch em todas as operações de banco de dados.
 
-## Estrutura de pastas
+- Estrutura de pastas
 
 ```
 bookstore-manager-cli/
@@ -172,7 +172,7 @@ bookstore-manager-cli/
 └── README.md
 ```
 
-## Exemplo de utilização
+- Exemplo de utilização
 
 ```
 ============================================
@@ -199,12 +199,11 @@ Id do cliente: 1
 Empréstimo registrado com sucesso! (id: 1)
 ```
 
-## Integrantes da equipe
+ Realizadora  do projeto: 
+Letícia Oliveira (solo).
 
-- [Nome do(a) integrante 1]
-- [Nome do(a) integrante 2] (se houver)
-- [Nome do(a) integrante 3] (se houver)
+ Link do Kanban
 
-## Link do Kanban
+https://github.com/users/leleeoliveira/projects/1/views/1
 
-[Inserir aqui o link do quadro Kanban utilizado pela equipe]
+
