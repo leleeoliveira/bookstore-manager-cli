@@ -202,8 +202,6 @@ Empréstimo registrado com sucesso! (id: 1)
  Realizadora  do projeto: 
 Letícia Oliveira (solo).
 
- Link do Kanban
+## Link do Kanban
 
 https://github.com/users/leleeoliveira/projects/1/views/1
-
-
