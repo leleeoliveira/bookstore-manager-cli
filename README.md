@@ -201,9 +201,7 @@ Empréstimo registrado com sucesso! (id: 1)
 
 ## Integrantes da equipe
 
-- [Nome do(a) integrante 1]
-- [Nome do(a) integrante 2] (se houver)
-- [Nome do(a) integrante 3] (se houver)
+- Letícia Oliveira
 
 ## Link do Kanban
 
